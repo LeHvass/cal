@@ -1,0 +1,8 @@
+DirectoryIndex master.php
+ErrorDocument 404 /404
+RewriteEngine on
+RewriteRule ^(.*)/$ /master.php?content=$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /master.php?content=$1&%{QUERY_STRING} [L]
+php_flag magic_quotes_gpc 0

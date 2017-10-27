@@ -1,0 +1,283 @@
+/* FONTS */
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+h1, h2, h4, h5, h6 {
+    font-weight: 600;
+}
+
+.fixed-width {
+    font-family: "Droid Sans Mono", "Lucida Console", Monaco, Consolas, "Courier New", monospace;
+}
+
+.text-gold {
+    color: gold;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    padding-top: 20px;
+}
+
+@media (max-width: 992px) {
+    body {
+        padding-top: 60px;
+    }
+}
+
+/* NAVMENU */
+
+.navbar {
+    text-align: center;
+    z-index: 1030;
+}
+.navmenu {
+    width: 260px;
+}
+.navbar-brand {
+    display: inline-block;
+    float: none;
+}
+
+.navmenu-date {
+    display: inline-block;
+    color: rgb(153, 153, 153);
+    padding: 0 15px 10px 15px;
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.navbar-toggle {
+    float: left;
+    margin-left: 15px;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding: 20px 0 0 260px;
+    }
+}
+
+.navmenu-inverse .navmenu-nav > li > a:hover {
+    background: transparent;
+}
+
+@media (max-width: 991px) {
+    .navmenu {
+        padding-top: 50px;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+}
+
+.dropdown-backdrop {
+    position: static;
+}
+
+/* STATIC FOOTER */
+
+html,
+body {
+    height: 100%;
+}
+
+/* POPOVERS */
+.popover{
+    max-width:350px;
+}
+
+/* TABLES */
+
+table.table-center td, table.table-center th, .table-centered {
+    text-align: center !important;
+}
+
+table.table-equal {
+    table-layout: fixed;
+}
+
+.table-right {
+    text-align: right !important;
+}
+
+td, th, td > i {
+    vertical-align: middle !important;
+}
+
+td input, th input, td select, th select {
+    margin-bottom: 0 !important;
+}
+
+td.fit, th.fit {
+    width: 1px;
+    white-space: nowrap !important;
+}
+
+table.tablesorter thead tr.tablesorter-filter-row input.disabled {
+    opacity: 0.0;
+}
+
+.table-bordered-outer td:first-child {
+    border-right: none;
+}
+
+.table-bordered-outer td + td, .table-bordered-outer th + th {
+    border-right: none !important;
+    border-left: none !important;
+}
+
+@media (min-width: 992px) {
+    table#bigCal {
+        display: table !important;
+    }
+}
+
+#table-homework td:nth-child(3) { white-space:nowrap; }
+
+#table-homework tr.danger td {
+    background-color: rgb(242, 222, 222) !important;
+}
+#table-homework tr.success td{
+    background-color: rgb(223, 240, 216) !important;
+}
+
+/* REMOVE OUTLINES */
+
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, a:hover, a:focus, .btn:focus {
+    outline: 0;
+}
+
+input[type="radio"]:focus,
+input[type="checkbox"]:focus { outline: none; }
+
+select:focus {
+    outline: 0;
+}
+
+/* BIG CALENDAR */
+
+.dl-horizontal dt {
+    text-align: center;
+    width: 20px;
+    clear: left;
+    float: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.dl-horizontal dd {
+    margin-left: 20px;
+}
+
+.fa-fw[class^="fa fa-"], .fa-fw[class*=" fa fa-"] {
+    text-align: center;
+}
+
+.select2-container.form-control {
+    display: inline-block;
+}
+
+table#bigCal td {
+    vertical-align: top !important;
+}
+
+@media (min-width: 992px) {
+    table#bigCal td {
+        height: 100px;
+    }
+}
+
+table#bigCal .dl-horizontal {
+    margin-top: 0px;
+}
+
+table#bigCal div.label {
+    /*    text-overflow: ellipsis;*/
+    overflow: hidden;
+    text-align: left;
+    float: left;
+    width: 100%;
+    cursor: pointer;
+    font-size: 11px;
+    margin-bottom: 1px;
+}
+
+/* FONTAWESOME LINKS*/
+
+a:hover i, a:focus i {
+    text-decoration: none;
+}
+
+/* TAB CONTENT */
+.tab-content {
+    padding-top: 10px;
+}
+
+/* PAGE HEADER */
+.page-header, .page-header h1 {
+    margin-top: 0px !important;
+}
+
+/* MISCELLANEOUS */
+
+.label {
+    font-weight: 600;
+}
+
+.radio, .checkbox {
+    margin-top: 0;
+    padding-left: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#rudiments .progress {
+    margin-bottom: 10px;
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: inherit;
+    opacity: 1;
+}
+
+/* TO-DO STAR HOVER */
+
+#to-do .star {
+    font-family:FontAwesome;
+    font-weight:normal;
+    font-style:normal;
+}
+
+#to-do .star:hover:before {
+    content: "\f005";
+    color: gold;
+}
+
+/* PANELS */
+
+.popover-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* RUDIMENTS */
+
+
+.progress {
+    position: relative;
+}
+
+.progress span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    color: black;
+}
